@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello</title>
+    <style>
+        body { background-color:#ddd29a; font-family:Arial; }
+        .box {
+            background:#447cff;
+            padding:20px;
+            border-radius:20px;
+            width:500px;
+            margin:auto;
+            margin-top:120px;
+            color:white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        button { background:#ffcb30; border:none; padding:8px 15px; border-radius:5px; cursor: pointer; }
+        button:disabled { background: #cccccc; cursor: not-allowed; }
+        input { padding:5px; width:200px; margin-bottom: 10px; }
+        .error { color:rgb(231, 5, 5); font-size:14px; }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div>
+        <h1>Log In Your Account</h1>
+        <p>Enter Your Details</p>
+        
+        <label>User</label><br>
+        <input type="text" id="user" placeholder="Enter Username"><br>
+        
+        <label>Password</label><br>
+        <input type="password" id="pass" placeholder="Enter Password"><br>
+        
+        <button id="loginBtn" onclick="log_in()">Log In</button>
+        
+        <p id="message" class="error"></p>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
